@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="162dp"
+        android:text="Welcome To Audio Book"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="Join | Sign Up using "
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="227dp"
+        android:text="Facebook" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button2"
+        android:layout_marginEnd="50dp"
+        android:text="Google" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:foreground="@color/black_overlay"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="OR"
+        android:textAlignment="center"
+        android:background="@color/background_material_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="251dp"
+        android:layout_marginStart="20dp"
+        android:text="Please Set up your account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginBottom="192dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginBottom="138dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/editText3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ccp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:maxLength="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="Set Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText5"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Confirm"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimary"
+        android:text="Proceed"
+        android:textColor="@color/background_material_light" />
+</RelativeLayout>
